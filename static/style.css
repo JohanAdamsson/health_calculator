@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#menu {
+    background-color: #333;
+    padding: 20px;
+    text-align: left;
+}
+
+#menu a {
+    color: white    ;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+#content {
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+
+}
+
+#content h1 {
+    color: green;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#content h2 {
+    color: darkblue;
+    text-align: left;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#content p {
+    color: darkblue;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+#image {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.5; 
+}
+
+h1 {
+    color: lightblue;
+    text-transform: uppercase;
+}
+
+label {
+    font-weight: bold;
+}
+
+form {
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    #menu h1 {
+        font-size: large;
+        margin-bottom: 25px;
+    }
+    #menu {
+        padding: 5px;
+        padding-left: 20px;
+        margin: 0;
+    }
+    #menu a {
+        margin-bottom: 5px; 
+
+}
